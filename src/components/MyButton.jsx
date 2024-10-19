@@ -1,14 +1,26 @@
 import { Button} from "flowbite-react";
+import OurModal from "./OurModal";
+import { useState } from "react";
 
 function MyButton() {
+
+
+    const [openModal, setOpenModal] = useState(false);
+
+
     return (
        
-        <div className="flex justify-end pb-5 pt-9">
-        <Button className="mr-3" color="success">
-            Add Task
-        </Button>
+    
+
+     <div className="flex px-4 justify-center md:justify-end pb-5 pt-9">
+    
+        <Button onClick={() => {setOpenModal(true)}} className="mr-3" color="success">Add Task</Button>  
         <Button color="failure">Clear Tasks</Button>
-    </div>
+        <OurModal onopen={openModal} onClose={() => {setOpenModal(false)}}/>
+
+
+     </div>
+
     );
 }
 

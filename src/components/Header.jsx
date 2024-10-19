@@ -7,6 +7,7 @@ import Footer from "./Footer";
 
 
 
+
 function Header() {
     return (
         <>
@@ -15,7 +16,7 @@ function Header() {
                     <div className="">
                         <h1 className="text-3xl font-bold">
                             <span className="text-rose-600">Munir</span>
-                            <span className="text-green-950">Coder</span>
+                            <span className="text-green-950 dark:text-gray-400">Coder</span>
                         </h1>
                     </div>
                     <div>
@@ -26,15 +27,15 @@ function Header() {
                 <Button />
 
                 <div className="overflow-x-auto mt-5 mb-9 border rounded-md">
-                    <div className="flex items-center justify-between px-8 py-6">
+                    <div className="flex items-center justify-between px-8 py-6 flex-wrap">
                         <div>
                             {" "}
-                            <h3 className="font-bold text-2xl text-rose-600">Your Task</h3>
+                            <h3 className="font-bold text-2xl dark:text-gray-400">Your Task</h3>
                         </div>
-                        <div className="flex items-center border border-gray-300 rounded-md ">
+                        <div className="flex items-center border rounded-md ">
                             {" "}
-                            <input className="border-none" type="text" placeholder="search" />
-                            <LuSearch className="mr-3" />
+                            <input className="dark:bg-slate-800 border-none" type="text" placeholder="search" />
+                            <LuSearch className="mr-3 dark:text-gray-400" />
                         </div>
                     </div>
 
