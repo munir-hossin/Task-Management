@@ -1,0 +1,35 @@
+
+
+
+
+
+    let createHandler = (item) => {
+        let updateTasks = [
+            ...tasks,
+            item,
+        ];
+
+        setTasks (updateTasks.reverse());
+
+        
+    }
+
+    let editHandler = (task) => {
+        setTasks(tasks.map(item => {
+            if(task.id === item.id) {
+                return task;
+            } else {
+                return item;
+            }
+        }));
+        
+    }
+
+
+    let deleteHandler = (id) => {
+        setTasks(tasks.filter(item => {
+            return item.id != id;
+            
+            
+        }));
+    }
