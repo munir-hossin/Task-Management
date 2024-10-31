@@ -9,12 +9,16 @@ function Layout() {
 
   return (
     <>
-      <Header />
-      <Banner />
-      <TaskTable />
+     <div  className="max-w-[1200px] mx-auto">
+     <Header/>
+      <Banner/>
+      <TaskTable/>
+     </div>
       <Footer />
     </>
   )
 }
 
 export default Layout
+
+//  className="max-w-[1200px] mx-auto"

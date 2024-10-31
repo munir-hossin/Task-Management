@@ -27,7 +27,7 @@ function Header() {
   return (
     <div className="py-4 border-b border-solid dark:border-[#666]">
       <Container className="flex justify-between items-center">
-        <h1 className="font-bold text-3xl"><span className="text-rose-700">Munir</span ><span className="dark:text-gray-300">Coder</span></h1>
+        <h1 className="font-bold text-3xl"><span className="dark:text-gray-300 text-yellow-400">Dr. Abdul Mannan khan</span></h1>
         {theme == 'dark'
         ?
         <CiDark 
