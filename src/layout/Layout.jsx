@@ -9,7 +9,7 @@ function Layout() {
 
   return (
     <>
-     <div  className="max-w-[1200px] mx-auto">
+     <div  className="lg:max-w-[1200px] mx-auto">
      <Header/>
       <Banner/>
       <TaskTable/>

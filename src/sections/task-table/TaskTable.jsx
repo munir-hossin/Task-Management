@@ -47,7 +47,7 @@ function TaskTable() {
 
     return (
         <Container className="mt-3">
-            <div className="flex justify-end w-full">
+            <div className="flex justify-center mb-6 md:justify-end w-full">
                 <Button onClick={() => setOpenModal(true)} className="mr-2" color="success">Add Task</Button>
                 <Button onClick={() => setTasks([])} color="failure">Clear Tasks</Button>
             </div>
